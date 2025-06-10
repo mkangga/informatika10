@@ -1,1 +1,354 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jelajahi Karir di Bidang Ilmu Komputer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+        .quiz-feedback {
+            display: none;
+            transition: all 0.3s ease-in-out;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
 
+    <!-- Header -->
+    <header class="bg-white shadow-md sticky top-0 z-10">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <h1 class="text-2xl font-bold text-indigo-600">Dunia Karir Teknologi</h1>
+            <nav class="hidden md:flex space-x-4">
+                <a href="#software" class="text-gray-600 hover:text-indigo-600">Software</a>
+                <a href="#data" class="text-gray-600 hover:text-indigo-600">Data & AI</a>
+                <a href="#security" class="text-gray-600 hover:text-indigo-600">Keamanan</a>
+                <a href="#infra" class="text-gray-600 hover:text-indigo-600">Infrastruktur</a>
+                <a href="#research" class="text-gray-600 hover:text-indigo-600">Riset</a>
+                <a href="#management" class="text-gray-600 hover:text-indigo-600">Manajemen</a>
+                <a href="#specialist" class="text-gray-600 hover:text-indigo-600">Spesialis</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-6 py-12">
+        <div class="text-center mb-12">
+            <h2 class="text-4xl font-extrabold text-gray-900">Jelajahi Dunia Karir di Bidang Ilmu Komputer</h2>
+            <p class="mt-4 text-lg text-gray-600 max-w-3xl mx-auto">Pelajari berbagai peran menarik di industri teknologi, mulai dari membuat aplikasi hingga melindungi data dari serangan siber. Pilih kategori dan uji pemahamanmu!</p>
+        </div>
+
+        <div class="space-y-16">
+            <!-- 1. Pengembangan Perangkat Lunak -->
+            <section id="software" class="bg-white p-8 rounded-xl shadow-lg border border-gray-200">
+                <h3 class="text-3xl font-bold text-indigo-700 mb-6">1. Pengembangan Perangkat Lunak (Software Development) 💻</h3>
+                <p class="mb-6 text-gray-600">Area ini fokus pada proses merancang, membuat, dan memelihara perangkat lunak atau aplikasi. Para profesional di bidang ini adalah arsitek dan pembangun dunia digital.</p>
+                <ul class="space-y-4 mb-8 list-disc list-inside">
+                    <li><strong>Programmer / Software Engineer:</strong> Menulis kode untuk menciptakan perangkat lunak, dari aplikasi desktop hingga sistem operasi yang kompleks.</li>
+                    <li><strong>Web Developer:</strong> Spesialis pembuat website. Terbagi menjadi <strong>Frontend</strong> (tampilan visual), <strong>Backend</strong> (sisi server dan database), dan <strong>Fullstack</strong> (menguasai keduanya).</li>
+                    <li><strong>Mobile App Developer:</strong> Menciptakan aplikasi untuk perangkat seluler seperti Android (Kotlin/Java) atau iOS (Swift).</li>
+                    <li><strong>Game Developer:</strong> Profesional kreatif yang merancang dan membangun video game, mengerjakan grafis, fisika, dan AI dalam game.</li>
+                </ul>
+                <!-- Kuis 1 -->
+                <div class="bg-indigo-50 p-6 rounded-lg border border-indigo-200">
+                    <h4 class="font-bold text-xl mb-4">🧠 Kuis Cepat</h4>
+                    <p class="mb-4">Seorang developer diminta untuk membangun sisi server sebuah aplikasi e-commerce, termasuk mengelola database produk dan transaksi pengguna. Peran apa yang paling sesuai untuk tugas ini?</p>
+                    <div id="quiz1" class="space-y-2">
+                        <label class="flex items-center p-3 rounded-md border border-gray-300 hover:bg-indigo-100 cursor-pointer"><input type="radio" name="q1" value="a" class="mr-3"> a) Frontend Developer</label>
+                        <label class="flex items-center p-3 rounded-md border border-gray-300 hover:bg-indigo-100 cursor-pointer"><input type="radio" name="q1" value="b" class="mr-3"> b) Backend Developer</label>
+                        <label class="flex items-center p-3 rounded-md border border-gray-300 hover:bg-indigo-100 cursor-pointer"><input type="radio" name="q1" value="c" class="mr-3"> c) Game Developer</label>
+                    </div>
+                    <button onclick="checkQuiz(1, 'b')" class="mt-4 bg-indigo-600 text-white font-bold py-2 px-4 rounded-lg hover:bg-indigo-700 transition-colors">Cek Jawaban</button>
+                    <div id="feedback1" class="quiz-feedback mt-4 p-4 rounded-md"></div>
+                </div>
+            </section>
+
+            <!-- 2. Data dan Kecerdasan Buatan -->
+            <section id="data" class="bg-white p-8 rounded-xl shadow-lg border border-gray-200">
+                <h3 class="text-3xl font-bold text-teal-700 mb-6">2. Data dan Kecerdasan Buatan (Data & AI) 📊</h3>
+                <p class="mb-6 text-gray-600">Bidang yang berfokus pada pengolahan, analisis, dan interpretasi data dalam jumlah besar untuk menghasilkan wawasan bisnis atau menciptakan sistem cerdas.</p>
+                <ul class="space-y-4 mb-8 list-disc list-inside">
+                    <li><strong>Data Scientist:</strong> Menggunakan metode ilmiah, statistik, dan machine learning untuk mengekstrak pengetahuan dari data yang kompleks.</li>
+                    <li><strong>Data Analyst:</strong> Menerjemahkan data menjadi laporan dan visualisasi yang mudah dipahami untuk membantu pengambilan keputusan bisnis.</li>
+                    <li><strong>Machine Learning Engineer:</strong> Merancang dan membangun model AI yang dapat belajar dari data, seperti sistem rekomendasi atau pengenalan wajah.</li>
+                    <li><strong>AI Researcher:</strong> Melakukan penelitian mendalam untuk mengembangkan algoritma dan teknik kecerdasan buatan yang baru.</li>
+                    <li><strong>Business Intelligence (BI) Analyst:</strong> Fokus pada analisis data historis untuk memberikan gambaran kinerja bisnis dan tren pasar.</li>
+                </ul>
+                <!-- Kuis 2 -->
+                <div class="bg-teal-50 p-6 rounded-lg border border-teal-200">
+                    <h4 class="font-bold text-xl mb-4">🧠 Kuis Cepat</h4>
+                    <p class="mb-4">Sebuah perusahaan ingin membuat sistem yang bisa memprediksi produk mana yang kemungkinan besar akan dibeli pelanggan berikutnya berdasarkan riwayat belanja mereka. Siapakah yang paling tepat untuk membangun sistem ini?</p>
+                    <div id="quiz2" class="space-y-2">
+                        <label class="flex items-center p-3 rounded-md border border-gray-300 hover:bg-teal-100 cursor-pointer"><input type="radio" name="q2" value="a" class="mr-3"> a) Data Analyst</label>
+                        <label class="flex items-center p-3 rounded-md border border-gray-300 hover:bg-teal-100 cursor-pointer"><input type="radio" name="q2" value="b" class="mr-3"> b) BI Analyst</label>
+                        <label class="flex items-center p-3 rounded-md border border-gray-300 hover:bg-teal-100 cursor-pointer"><input type="radio" name="q2" value="c" class="mr-3"> c) Machine Learning Engineer</label>
+                    </div>
+                    <button onclick="checkQuiz(2, 'c')" class="mt-4 bg-teal-600 text-white font-bold py-2 px-4 rounded-lg hover:bg-teal-700 transition-colors">Cek Jawaban</button>
+                    <div id="feedback2" class="quiz-feedback mt-4 p-4 rounded-md"></div>
+                </div>
+            </section>
+
+            <!-- 3. Jaringan dan Keamanan -->
+            <section id="security" class="bg-white p-8 rounded-xl shadow-lg border border-gray-200">
+                <h3 class="text-3xl font-bold text-red-700 mb-6">3. Jaringan dan Keamanan (Networking & Cybersecurity) 🛡️</h3>
+                <p class="mb-6 text-gray-600">Area ini memastikan bahwa sistem komputer dan jaringan dapat berkomunikasi dengan aman, andal, dan terlindungi dari ancaman siber.</p>
+                <ul class="space-y-4 mb-8 list-disc list-inside">
+                    <li><strong>Network Engineer:</strong> Merancang, membangun, dan mengelola jaringan komputer (seperti LAN, WAN, dan internet) agar berjalan efisien.</li>
+                    <li><strong>Cybersecurity Analyst:</strong> Memonitor sistem untuk mendeteksi ancaman, menganalisis serangan, dan merespons insiden keamanan.</li>
+                    <li><strong>Ethical Hacker / Penetration Tester:</strong> Secara legal meretas sistem perusahaan (dengan izin) untuk menemukan celah keamanan sebelum penjahat siber menemukannya.</li>
+                    <li><strong>Security Engineer:</strong> Merancang dan membangun sistem keamanan yang tangguh, seperti firewall dan sistem deteksi intrusi, untuk melindungi aset digital.</li>
+                </ul>
+                <!-- Kuis 3 -->
+                <div class="bg-red-50 p-6 rounded-lg border border-red-200">
+                    <h4 class="font-bold text-xl mb-4">🧠 Kuis Cepat</h4>
+                    <p class="mb-4">Sebuah bank menyewa seorang profesional untuk mencoba membobol sistem perbankan online mereka untuk menemukan kelemahan. Peran apakah ini?</p>
+                    <div id="quiz3" class="space-y-2">
+                        <label class="flex items-center p-3 rounded-md border border-gray-300 hover:bg-red-100 cursor-pointer"><input type="radio" name="q3" value="a" class="mr-3"> a) Network Engineer</label>
+                        <label class="flex items-center p-3 rounded-md border border-gray-300 hover:bg-red-100 cursor-pointer"><input type="radio" name="q3" value="b" class="mr-3"> b) Ethical Hacker</label>
+                        <label class="flex items-center p-3 rounded-md border border-gray-300 hover:bg-red-100 cursor-pointer"><input type="radio" name="q3" value="c" class="mr-3"> c) Cybersecurity Analyst</label>
+                    </div>
+                    <button onclick="checkQuiz(3, 'b')" class="mt-4 bg-red-600 text-white font-bold py-2 px-4 rounded-lg hover:bg-red-700 transition-colors">Cek Jawaban</button>
+                    <div id="feedback3" class="quiz-feedback mt-4 p-4 rounded-md"></div>
+                </div>
+            </section>
+            
+            <!-- 4. Sistem dan Infrastruktur -->
+            <section id="infra" class="bg-white p-8 rounded-xl shadow-lg border border-gray-200">
+                <h3 class="text-3xl font-bold text-sky-700 mb-6">4. Sistem dan Infrastruktur (Systems & Infrastructure) ☁️</h3>
+                <p class="mb-6 text-gray-600">Fondasi dari semua layanan digital. Bidang ini berfokus pada penyediaan, pengelolaan, dan pemeliharaan server, sistem operasi, dan infrastruktur cloud.</p>
+                <ul class="space-y-4 mb-8 list-disc list-inside">
+                    <li><strong>System Administrator:</strong> Bertanggung jawab atas instalasi, konfigurasi, dan pemeliharaan server dan sistem komputer agar selalu berjalan optimal.</li>
+                    <li><strong>DevOps Engineer:</strong> Menjembatani tim pengembangan (Dev) dan operasi (Ops) untuk mengotomatiskan proses rilis software, dari penulisan kode hingga penerapan di server.</li>
+                    <li><strong>Cloud Engineer:</strong> Spesialis dalam mengelola infrastruktur di platform cloud seperti Amazon Web Services (AWS), Google Cloud, atau Microsoft Azure.</li>
+                    <li><strong>Site Reliability Engineer (SRE):</strong> Menggunakan pendekatan software engineering untuk mengelola infrastruktur dan operasi agar sistem berjalan sangat andal dan skalabel.</li>
+                </ul>
+                <!-- Kuis 4 -->
+                <div class="bg-sky-50 p-6 rounded-lg border border-sky-200">
+                    <h4 class="font-bold text-xl mb-4">🧠 Kuis Cepat</h4>
+                    <p class="mb-4">Sebuah startup ingin mempercepat proses perilisan fitur baru mereka dengan mengotomatiskan testing dan deployment. Profesional mana yang paling mereka butuhkan?</p>
+                    <div id="quiz4" class="space-y-2">
+                        <label class="flex items-center p-3 rounded-md border border-gray-300 hover:bg-sky-100 cursor-pointer"><input type="radio" name="q4" value="a" class="mr-3"> a) System Administrator</label>
+                        <label class="flex items-center p-3 rounded-md border border-gray-300 hover:bg-sky-100 cursor-pointer"><input type="radio" name="q4" value="b" class="mr-3"> b) Cloud Engineer</label>
+                        <label class="flex items-center p-3 rounded-md border border-gray-300 hover:bg-sky-100 cursor-pointer"><input type="radio" name="q4" value="c" class="mr-3"> c) DevOps Engineer</label>
+                    </div>
+                    <button onclick="checkQuiz(4, 'c')" class="mt-4 bg-sky-600 text-white font-bold py-2 px-4 rounded-lg hover:bg-sky-700 transition-colors">Cek Jawaban</button>
+                    <div id="feedback4" class="quiz-feedback mt-4 p-4 rounded-md"></div>
+                </div>
+            </section>
+            
+            <!-- 5. Riset dan Akademik -->
+            <section id="research" class="bg-white p-8 rounded-xl shadow-lg border border-gray-200">
+                <h3 class="text-3xl font-bold text-purple-700 mb-6">5. Riset dan Akademik (Research & Academia) 🔬</h3>
+                 <p class="mb-6 text-gray-600">Area bagi mereka yang memiliki hasrat untuk penelitian, penemuan, dan pendidikan di bidang ilmu komputer. Fokusnya adalah mendorong batas-batas pengetahuan.</p>
+                <ul class="space-y-4 mb-8 list-disc list-inside">
+                    <li><strong>Dosen / Peneliti:</strong> Mengajar mahasiswa dan melakukan penelitian di universitas untuk menghasilkan publikasi ilmiah dan inovasi baru.</li>
+                    <li><strong>Research Scientist:</strong> Bekerja di laboratorium riset perusahaan besar (seperti Google AI atau Microsoft Research) untuk menemukan teknologi masa depan.</li>
+                    <li><strong>Human-Computer Interaction (HCI) Specialist:</strong> Meneliti bagaimana manusia berinteraksi dengan komputer untuk merancang teknologi yang lebih intuitif dan ramah pengguna.</li>
+                </ul>
+                <!-- Kuis 5 -->
+                <div class="bg-purple-50 p-6 rounded-lg border border-purple-200">
+                    <h4 class="font-bold text-xl mb-4">🧠 Kuis Cepat</h4>
+                    <p class="mb-4">Seseorang meneliti cara membuat interaksi dengan komputer melalui gerakan mata menjadi lebih alami dan efisien. Apa spesialisasi orang tersebut?</p>
+                    <div id="quiz5" class="space-y-2">
+                        <label class="flex items-center p-3 rounded-md border border-gray-300 hover:bg-purple-100 cursor-pointer"><input type="radio" name="q5" value="a" class="mr-3"> a) Research Scientist</label>
+                        <label class="flex items-center p-3 rounded-md border border-gray-300 hover:bg-purple-100 cursor-pointer"><input type="radio" name="q5" value="b" class="mr-3"> b) HCI Specialist</label>
+                        <label class="flex items-center p-3 rounded-md border border-gray-300 hover:bg-purple-100 cursor-pointer"><input type="radio" name="q5" value="c" class="mr-3"> c) Dosen</label>
+                    </div>
+                    <button onclick="checkQuiz(5, 'b')" class="mt-4 bg-purple-600 text-white font-bold py-2 px-4 rounded-lg hover:bg-purple-700 transition-colors">Cek Jawaban</button>
+                    <div id="feedback5" class="quiz-feedback mt-4 p-4 rounded-md"></div>
+                </div>
+            </section>
+            
+            <!-- 6. Manajemen Teknologi -->
+            <section id="management" class="bg-white p-8 rounded-xl shadow-lg border border-gray-200">
+                <h3 class="text-3xl font-bold text-orange-700 mb-6">6. Manajemen Teknologi (Tech Management) 📈</h3>
+                <p class="mb-6 text-gray-600">Bidang ini menggabungkan keahlian teknis dengan keterampilan manajemen untuk memimpin tim, mengelola proyek, dan menentukan arah strategis produk teknologi.</p>
+                <ul class="space-y-4 mb-8 list-disc list-inside">
+                    <li><strong>IT Project Manager:</strong> Merencanakan, mengeksekusi, dan menyelesaikan proyek teknologi, memastikan proyek selesai tepat waktu, sesuai anggaran, dan memenuhi tujuan.</li>
+                    <li><strong>Product Manager (Teknologi):</strong> Menentukan visi dan strategi sebuah produk teknologi, memahami kebutuhan pengguna, dan memprioritaskan fitur yang akan dibangun.</li>
+                    <li><strong>Scrum Master:</strong> Fasilitator dalam kerangka kerja Agile (Scrum), bertugas memastikan tim mengikuti praktik Scrum dan menghilangkan hambatan yang dihadapi tim.</li>
+                    <li><strong>CTO (Chief Technology Officer):</strong> Pemimpin eksekutif yang bertanggung jawab atas seluruh strategi dan keputusan teknologi di sebuah perusahaan.</li>
+                </ul>
+                <!-- Kuis 6 -->
+                <div class="bg-orange-50 p-6 rounded-lg border border-orange-200">
+                    <h4 class="font-bold text-xl mb-4">🧠 Kuis Cepat</h4>
+                    <p class="mb-4">Siapakah yang bertanggung jawab untuk menentukan fitur apa yang harus ditambahkan ke aplikasi Instagram pada pembaruan berikutnya?</p>
+                    <div id="quiz6" class="space-y-2">
+                        <label class="flex items-center p-3 rounded-md border border-gray-300 hover:bg-orange-100 cursor-pointer"><input type="radio" name="q6" value="a" class="mr-3"> a) Product Manager</label>
+                        <label class="flex items-center p-3 rounded-md border border-gray-300 hover:bg-orange-100 cursor-pointer"><input type="radio" name="q6" value="b" class="mr-3"> b) IT Project Manager</label>
+                        <label class="flex items-center p-3 rounded-md border border-gray-300 hover:bg-orange-100 cursor-pointer"><input type="radio" name="q6" value="c" class="mr-3"> c) Scrum Master</label>
+                    </div>
+                    <button onclick="checkQuiz(6, 'a')" class="mt-4 bg-orange-600 text-white font-bold py-2 px-4 rounded-lg hover:bg-orange-700 transition-colors">Cek Jawaban</button>
+                    <div id="feedback6" class="quiz-feedback mt-4 p-4 rounded-md"></div>
+                </div>
+            </section>
+
+            <!-- 7. Bidang Spesialis Lainnya -->
+            <section id="specialist" class="bg-white p-8 rounded-xl shadow-lg border border-gray-200">
+                <h3 class="text-3xl font-bold text-yellow-700 mb-6">7. Bidang Spesialis Lainnya 🚀</h3>
+                <p class="mb-6 text-gray-600">Dunia teknologi terus berkembang, melahirkan berbagai peran spesialis yang unik dan canggih, seringkali menggabungkan ilmu komputer dengan bidang lain.</p>
+                <ul class="space-y-4 mb-8 list-disc list-inside">
+                    <li><strong>UX/UI Designer:</strong> Fokus pada pengalaman pengguna (UX) dan antarmuka pengguna (UI). Mereka merancang alur aplikasi agar mudah digunakan (UX) dan membuat tampilannya menarik secara visual (UI).</li>
+                    <li><strong>Robotics Engineer:</strong> Merancang, membangun, dan memprogram robot untuk berbagai keperluan, dari manufaktur hingga medis.</li>
+                    <li><strong>Embedded Systems Engineer:</strong> Mengembangkan perangkat lunak untuk sistem komputer kecil yang "tertanam" di dalam perangkat keras, seperti di dalam mobil, microwave, atau jam tangan pintar.</li>
+                    <li><strong>Blockchain Developer:</strong> Membangun aplikasi terdesentralisasi (dApps) dan sistem menggunakan teknologi blockchain, seperti mata uang kripto.</li>
+                    <li><strong>AR/VR Developer:</strong> Mengembangkan pengalaman imersif untuk Augmented Reality (AR) yang melapisi dunia nyata dengan digital, dan Virtual Reality (VR) yang menciptakan dunia digital sepenuhnya.</li>
+                </ul>
+                <!-- Kuis 7 -->
+                <div class="bg-yellow-50 p-6 rounded-lg border border-yellow-200">
+                    <h4 class="font-bold text-xl mb-4">🧠 Kuis Cepat</h4>
+                    <p class="mb-4">Seorang insinyur sedang menulis kode untuk sistem pengereman otomatis pada mobil modern. Dia bekerja di bidang...</p>
+                    <div id="quiz7" class="space-y-2">
+                        <label class="flex items-center p-3 rounded-md border border-gray-300 hover:bg-yellow-100 cursor-pointer"><input type="radio" name="q7" value="a" class="mr-3"> a) Robotics Engineer</label>
+                        <label class="flex items-center p-3 rounded-md border border-gray-300 hover:bg-yellow-100 cursor-pointer"><input type="radio" name="q7" value="b" class="mr-3"> b) Blockchain Developer</label>
+                        <label class="flex items-center p-3 rounded-md border border-gray-300 hover:bg-yellow-100 cursor-pointer"><input type="radio" name="q7" value="c" class="mr-3"> c) Embedded Systems Engineer</label>
+                    </div>
+                    <button onclick="checkQuiz(7, 'c')" class="mt-4 bg-yellow-500 text-white font-bold py-2 px-4 rounded-lg hover:bg-yellow-600 transition-colors">Cek Jawaban</button>
+                    <div id="feedback7" class="quiz-feedback mt-4 p-4 rounded-md"></div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white mt-16">
+        <div class="container mx-auto px-6 py-4 text-center">
+            <p>&copy; 2024 Panduan Karir Teknologi. Dibuat untuk pembelajaran.</p>
+        </div>
+    </footer>
+
+    <script>
+        function checkQuiz(quizNumber, correctAnswer) {
+            // Mapping jawaban ke pembahasan
+            const discussions = {
+                1: {
+                    'b': { // Jawaban benar
+                        correct: true,
+                        text: "<strong>Jawaban Benar! ✅</strong> Tepat sekali! Seorang Backend Developer bertanggung jawab atas logika sisi server, database, dan memastikan semua fungsi 'di balik layar' berjalan dengan baik."
+                    },
+                    'a': { // Jawaban salah
+                        correct: false,
+                        text: "<strong>Jawaban Kurang Tepat. ❌</strong> Seorang Frontend Developer fokus pada tampilan visual yang dilihat pengguna, bukan sisi server. Tugas ini lebih cocok untuk Backend Developer."
+                    },
+                    'c': { // Jawaban salah
+                        correct: false,
+                        text: "<strong>Jawaban Kurang Tepat. ❌</strong> Seorang Game Developer fokus pada pembuatan video game. Meskipun mereka juga bekerja dengan server, peran spesifik untuk aplikasi web adalah Backend Developer."
+                    }
+                },
+                2: {
+                    'c': {
+                        correct: true,
+                        text: "<strong>Jawaban Benar! ✅</strong> Tepat! Machine Learning Engineer adalah peran yang merancang dan membangun model prediktif seperti ini. Mereka mengubah data historis menjadi sistem cerdas yang bisa membuat prediksi."
+                    },
+                    'a': {
+                        correct: false,
+                        text: "<strong>Jawaban Kurang Tepat. ❌</strong> Data Analyst lebih fokus pada menganalisis data yang *sudah ada* untuk membuat laporan, bukan membangun sistem prediktif baru. Tugas ini adalah domain Machine Learning Engineer."
+                    },
+                    'b': {
+                        correct: false,
+                        text: "<strong>Jawaban Kurang Tepat. ❌</strong> BI Analyst biasanya melihat tren dari data historis, tetapi membangun model prediktif yang aktif adalah spesialisasi dari Machine Learning Engineer."
+                    }
+                },
+                3: {
+                    'b': {
+                        correct: true,
+                        text: "<strong>Jawaban Benar! ✅</strong> Mantap! Ethical Hacker (atau Penetration Tester) adalah 'peretas baik' yang disewa untuk menemukan celah keamanan secara legal sebelum dieksploitasi oleh pihak jahat."
+                    },
+                    'a': {
+                        correct: false,
+                        text: "<strong>Jawaban Kurang Tepat. ❌</strong> Network Engineer memastikan jaringan berjalan lancar, tetapi tidak secara spesifik bertugas untuk menguji keamanan dengan cara meretas sistem."
+                    },
+                    'c': {
+                        correct: false,
+                        text: "<strong>Jawaban Kurang Tepat. ❌</strong> Cybersecurity Analyst memonitor dan merespons ancaman, sedangkan Ethical Hacker secara proaktif mencari celah keamanan dengan melakukan simulasi serangan."
+                    }
+                },
+                4: {
+                    'c': {
+                        correct: true,
+                        text: "<strong>Jawaban Benar! ✅</strong> Tepat sekali! DevOps Engineer adalah spesialis dalam menciptakan alur kerja otomatis (CI/CD pipeline) untuk menjembatani pengembangan dan operasi, sehingga perilisan software jadi lebih cepat dan andal."
+                    },
+                    'a': {
+                        correct: false,
+                        text: "<strong>Jawaban Kurang Tepat. ❌</strong> System Administrator fokus pada pemeliharaan server, tetapi otomatisasi proses rilis software adalah inti dari pekerjaan seorang DevOps Engineer."
+                    },
+                    'b': {
+                        correct: false,
+                        text: "<strong>Jawaban Kurang Tepat. ❌</strong> Cloud Engineer mengelola infrastruktur cloud, yang mungkin digunakan dalam proses ini, tapi peran yang secara spesifik fokus pada otomatisasi alur kerja adalah DevOps Engineer."
+                    }
+                },
+                5: {
+                    'b': {
+                        correct: true,
+                        text: "<strong>Jawaban Benar! ✅</strong> Benar! Human-Computer Interaction (HCI) Specialist adalah peneliti yang fokus mempelajari dan meningkatkan cara manusia berinteraksi dengan teknologi, termasuk antarmuka inovatif seperti kontrol mata."
+                    },
+                    'a': {
+                        correct: false,
+                        text: "<strong>Jawaban Kurang Tepat. ❌</strong> Research Scientist adalah istilah yang lebih umum. HCI Specialist adalah sebutan yang sangat spesifik untuk bidang penelitian interaksi manusia dan komputer."
+                    },
+                    'c': {
+                        correct: false,
+                        text: "<strong>Jawaban Kurang Tepat. ❌</strong> Seorang Dosen bisa jadi meneliti ini, namun spesialisasi risetnya disebut HCI. Jadi, HCI Specialist adalah jawaban yang paling presisi."
+                    }
+                },
+                6: {
+                    'a': {
+                        correct: true,
+                        text: "<strong>Jawaban Benar! ✅</strong> Tepat! Product Manager adalah orang yang bertanggung jawab atas 'apa' dan 'mengapa' sebuah produk dibuat. Mereka menentukan visi, strategi, dan fitur apa yang perlu diprioritaskan berdasarkan kebutuhan pengguna dan tujuan bisnis."
+                    },
+                    'b': {
+                        correct: false,
+                        text: "<strong>Jawaban Kurang Tepat. ❌</strong> IT Project Manager fokus pada 'bagaimana' dan 'kapan' sebuah proyek selesai. Mereka mengeksekusi rencana, bukan menentukan visi produk."
+                    },
+                    'c': {
+                        correct: false,
+                        text: "<strong>Jawaban Kurang Tepat. ❌</strong> Scrum Master adalah fasilitator tim, memastikan proses pengembangan berjalan lancar, bukan penentu fitur produk."
+                    }
+                },
+                7: {
+                    'c': {
+                        correct: true,
+                        text: "<strong>Jawaban Benar! ✅</strong> Tepat! Embedded Systems Engineer adalah spesialis yang bekerja pada software untuk perangkat keras spesifik yang 'tertanam' di dalam sistem lain, seperti sistem komputer di dalam mobil."
+                    },
+                    'a': {
+                        correct: false,
+                        text: "<strong>Jawaban Kurang Tepat. ❌</strong> Meskipun mobil bisa memiliki komponen robotik, sistem pengereman adalah contoh klasik dari sistem tertanam (embedded system), bukan robotika dalam arti luas."
+                    },
+                    'b': {
+                        correct: false,
+                        text: "<strong>Jawaban Kurang Tepat. ❌</strong> Blockchain Developer bekerja dengan teknologi terdesentralisasi seperti cryptocurrency, yang tidak berhubungan dengan sistem pengereman mobil."
+                    }
+                }
+            };
+
+            const selectedOption = document.querySelector(`input[name="q${quizNumber}"]:checked`);
+            const feedbackEl = document.getElementById(`feedback${quizNumber}`);
+            
+            if (!selectedOption) {
+                feedbackEl.innerHTML = "<strong>Ups! 😮</strong> Anda belum memilih jawaban. Silakan pilih salah satu.";
+                feedbackEl.className = 'quiz-feedback mt-4 p-4 rounded-md bg-yellow-100 text-yellow-800 border border-yellow-300';
+                feedbackEl.style.display = 'block';
+                return;
+            }
+
+            const userAnswer = selectedOption.value;
+            const discussionInfo = discussions[quizNumber][userAnswer];
+
+            feedbackEl.innerHTML = discussionInfo.text;
+            if (discussionInfo.correct) {
+                feedbackEl.className = 'quiz-feedback mt-4 p-4 rounded-md bg-green-100 text-green-800 border border-green-300';
+            } else {
+                feedbackEl.className = 'quiz-feedback mt-4 p-4 rounded-md bg-red-100 text-red-800 border border-red-300';
+            }
+            feedbackEl.style.display = 'block';
+        }
+    </script>
+
+</body>
+</html>
